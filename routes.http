@@ -1,0 +1,33 @@
+POST http://localhost:3333/livro
+Content-Type: application/json
+
+{
+    "titulo": "Livro 01",
+    "autor": "Autor 01",
+    "npaginas": 450
+}
+
+### 
+
+GET http://localhost:3333/livro
+
+
+### 
+
+GET http://localhost:3333/livro?search=bem1000
+
+
+###
+
+PUT http://localhost:3333/livro
+Content-Type: application/json
+
+{
+    "titulo": "Livro: bem1000",
+    "autor": "Autor: eu",
+    "npaginas": 450
+}
+
+###
+
+DELETE http://localhost:3333/livro/b7fc37a7-ea4e-47d9-9d6d-494239e77670
